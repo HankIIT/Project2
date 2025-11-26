@@ -1,0 +1,138 @@
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #015749;
+}
+
+#navbar ul li {
+  width: 25%;
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  background-color: #004739;
+  color: rgb(222, 222, 222);
+}
+
+#pagecontent h1{
+  font-family: "Limelight", sans-serif;
+  text-align: center;
+}
+
+#pagecontent h2{
+  font-family: "Limelight", sans-serif;
+}
+
+body {
+  background-color: rgb(132, 181, 132);
+}
+
+#first {
+  background-color: rgb(175, 238, 255);
+  width: 100%;
+  margin: auto;
+  padding: 2%;
+  border: solid rgb(23, 0, 128);
+  border-width: 5px 0px;
+  animation-name: firstintromobile;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@media screen and (min-width: 600px){
+  #first {
+    width: 80%;
+    border-width: 5px;
+    animation-name: firstintro;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes firstintro {
+  
+  0%   {transform: translate(-1000px, 0px);}
+  100% {transform: translate(0px, 0px);}
+}
+
+@keyframes firstintromobile {
+  
+  0%   {transform: translate(0, 1000px);}
+  100% {transform: translate(0px, 0px);}
+}
+
+#second {
+  background-color: rgb(255, 241, 201);
+  width: 100%;
+  margin: auto;
+  padding: 2%;
+  border: solid rgb(245, 144, 20);
+  border-width: 5px 0px;
+  animation-name: secondintromobile;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+@media screen and (min-width: 600px){
+  #second {
+    width: 80%;
+    border-width: 5px;
+    animation-name: secondintro;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-delay: 0sl
+  }
+}
+
+@keyframes secondintro {
+  0%   {transform: translate(1000px, 0px);}
+  100% {transform: translate(0px, 0px);}
+}
+
+@keyframes secondintromobile {
+  0%   {transform: translate(0, 1000px);}
+  100% {transform: translate(0px, 0px);}
+}
+
+
+#final {
+  background-color: rgb(225, 171, 234);
+  width: 100%;
+  margin: auto;
+  padding: 2%;
+  border: solid rgb(243, 36, 122);
+  border-width: 5px 0px;
+  animation-name: finalintro;
+  animation-duration: 3s;
+  animation-delay: 4s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+@media screen and (min-width: 600px){
+  #final {
+    width: 80%;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    border-width: 5px;
+
+  }
+}
+
+@keyframes finalintro {
+  0%   {transform: translate(0, 1000px);}
+  100% {transform: translate(0px, 0px);}
+}
+
+
