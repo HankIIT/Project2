@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>About My Deck</title>
+    <link rel="stylesheet" type="text/css" href="css/mapstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <script async src="Javascript/map.js"></script>
+
+  </head>
+
+    <!-- The navigation section-->
+  <body>
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="page3.html">My Deck</a></li>
+          <li><a href="map.html">Map</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+
+  <main id = pagecontent>
+    <!--Header-->
+    <h2>My Favorite Places to Eat Around IIT</h2>
+
+    <!--Map-->
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap&callback=map"></script>
+
+    <!--Recenter Button-->
+    <button id="recenter" onclick=recenter()>Recenter On IIT</button>
+
+    <!--Question Button-->
+    <button id="questions" onclick=questions()>Questions?</button>
+
+  </main>
+
+
+</html>
